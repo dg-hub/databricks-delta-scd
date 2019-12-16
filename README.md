@@ -11,9 +11,8 @@ MIT - Copyright (c) 2019 Daniel G - https://github.com/dg-hub
 * **exec_scd()** - Executes a SCD merge into target path
 
 # Feature requests
-Please use Git Hub issues to request new features:
-
-  https://github.com/dg-hub/databricks-delta-scd/issues
+##### Please use Git Hub issues to request new features:
+https://github.com/dg-hub/databricks-delta-scd/issues
 
 
 # Release Notes
