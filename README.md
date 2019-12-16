@@ -6,9 +6,9 @@ MIT - Copyright (c) 2019 Daniel G - https://github.com/dg-hub
 
 # Features
 
-* create_delta_target().  Creates a target table with attribute columns from DataFrame
-* build_merge_sql().  Builds a SQL MERGE statement
-* exec_scd(). Executes a SCD merge into target path
+* **create_delta_target()** -  Creates a target table with attribute columns from DataFrame
+* **build_merge_sql()** -  Builds a SQL MERGE statement
+* **exec_scd()** - Executes a SCD merge into target path
 
 # Feature requests
 Please use Git Hub issues to request new features:
@@ -22,7 +22,7 @@ Version 0.2.0 (December 16, 2019) Add initial code to build and execute SQL MERG
 
 # Usage
 
-### A delta target is required before any updates can be merged.
+#### A delta target is required before any updates can be merged.
 
 ```python
     # Create a new target table from 'source'
@@ -42,7 +42,7 @@ Version 0.2.0 (December 16, 2019) Add initial code to build and execute SQL MERG
     create_delta_target(df_source,target_path,hash_exclude_columns)
 ```
 
-### Once a SCD target exists data can be merged.
+#### Once a SCD target exists data can be merged.
 
 ```python
     # Execute SCD merge of from 'source_update'
@@ -62,7 +62,7 @@ Version 0.2.0 (December 16, 2019) Add initial code to build and execute SQL MERG
     exec_scd(updates_df,target_path,target_keys,hash_exclude_columns)
 ```
 
-# Test Data
+## Test Data
 
 The following will generate some test data with two primary keys `["id1","id2"]`
 
